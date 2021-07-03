@@ -9,15 +9,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f3121878e65b1b4f9911182f33e1b05, type: 3}
-  m_Name: Default Terrain
+  m_Script: {fileID: 11500000, guid: db9010484f54f4144894d57dcd413a05, type: 3}
+  m_Name: Default HeighMap Settings
   m_EditorClassIdentifier: 
   autoUpdate: 1
-  uniformScale: 2.5
-  useFlatShading: 0
+  noiseSettings:
+    normalizeMode: 0
+    scale: 50
+    octaves: 6
+    persistance: 0.56
+    lacunarity: 2.5
+    seed: 9
+    offset: {x: -5.25, y: 0}
   useFalloff: 0
-  meshHeightMultiplier: 30
-  meshHeightCurve:
+  heightMultiplier: 40
+  heightCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
@@ -30,40 +36,31 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.34815133
-      value: 0.14033064
-      inSlope: 0.93153065
-      outSlope: 0.93153065
+      time: 0.24000317
+      value: 0.22985451
+      inSlope: 2.0523455
+      outSlope: 2.0523455
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.24886899
+      inWeight: 0.19267623
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.66866994
-      value: 0.488969
-      inSlope: 1.3877597
-      outSlope: 1.3877597
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.9049589
-      value: 0.88180155
-      inSlope: 1.5880703
-      outSlope: 1.5880703
+      time: 0.73371
+      value: 0.4238156
+      inSlope: 1.1531559
+      outSlope: 1.1531559
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 1
+      time: 0.99505615
       value: 1
-      inSlope: 2.1530762
-      outSlope: 2.1530762
+      inSlope: 2.3522975
+      outSlope: 2.3522975
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.79474765
+      inWeight: 0.2651528
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
