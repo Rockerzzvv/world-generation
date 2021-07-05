@@ -24,7 +24,7 @@ public class MeshSettings : UpdatableData
 	{
 		get
 		{
-			return supportedChunkSizes[(useFlatShading) ? flatshadedChunkSizeIndex : chunkSizeIndex] + 1;
+			return supportedChunkSizes[(useFlatShading) ? flatshadedChunkSizeIndex : chunkSizeIndex] + 5;
 		}
 	}
 
@@ -35,6 +35,4 @@ public class MeshSettings : UpdatableData
 			return (numVertsPerLine - 3) * meshScale;
 		}
 	}
-
-
 }
