@@ -18,14 +18,11 @@ public class MapPreview : MonoBehaviour
 
 	public Material terrainMaterial;
 
-
+	public float[,] falloffmap;
 
 	[Range(0, MeshSettings.numSupportedLODs - 1)]
 	public int editorPreviewLOD;
 	public bool autoUpdate;
-
-
-
 
 	public void DrawMapInEditor()
 	{
